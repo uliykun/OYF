@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Weather Forecast" icon-name="standard:dynamic_record_choice">
+        <template if:true={errorMessage}>
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+              <span class="slds-assistive-text">Error</span>
+              <!-- <h2 class="slds-text-heading_small">Error</h2> -->
+              <div class="slds-notify__content">
+                <p>{errorMessage}</p>
+              </div>
+            </div>
+        </template>
+        <template if:false={errorMessage}>
+            <div class="slds-p-around_medium">
+                    <c-label-to-value-output label="City Name" value={weatherForecastData.name}></c-label-to-value-output>
+                    <c-label-to-value-output label="City Temperature" value={weatherForecastData.temp}></c-label-to-value-output>
+                    <c-label-to-value-output label="Sunrise" value={weatherForecastData.sunrise}></c-label-to-value-output>
+                    <c-label-to-value-output label="Sunset" value={weatherForecastData.sunset}></c-label-to-value-output>
+                    <c-label-to-value-output label="Pressure" value={weatherForecastData.pressure}></c-label-to-value-output>
+                    <c-label-to-value-output label="Humidity" value={weatherForecastData.humidity}></c-label-to-value-output>
+            </div>
+        </template>
+    </lightning-card>
+</template>
+
