@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>OpenWeatherApiKey</label>
+    <protected>false</protected>
+    <values>
+        <field>OpenWeatherApiKey__c</field>
+        <value xsi:type="xsd:string">a0044bd1008903b54a7e61bc07d1de24</value>
+    </values>
+</CustomMetadata>
